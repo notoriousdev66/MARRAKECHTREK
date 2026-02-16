@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Marrakech Treks</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">MT Marrakech Treks</div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                    <li><a href="index.html#treks" class="nav-link">Nos Treks</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="hero contact-hero"
+        style="background-image: linear-gradient(var(--color-overlay), var(--color-overlay)), url('https://images.unsplash.com/photo-1549488497-2936720d2c36?q=80&w=2070&auto=format&fit=crop');">
+        <div class="container hero-content">
+            <h1 class="hero-title">CONTACTez NOUS</h1>
+            <p class="hero-subtitle">PRÉPARONS ENSEMBLE VOTRE PROCHAINE AVENTURE</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section">
+        <div class="container contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="section-title" style="text-align: left; margin-bottom: 20px;">
+                    <span class="section-subtitle">INFORMATIONS</span>
+                    <h2>Restons en Contact</h2>
+                </div>
+                <p style="margin-bottom: 30px;">N'hésitez pas à nous contacter pour toute question ou demande de devis
+                    personnalisé. Nous sommes à votre écoute.</p>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Téléphone / WhatsApp</h4>
+                        <p>+212 662-302321</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>ait_talate@hotmail.fr</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Adresse</h4>
+                        <p>Marrakech, Maroc</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div>
+                        <h4>Facebook</h4>
+                        <p>Marrakech Treks</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3 style="margin-bottom: 20px;">Envoyez un Message</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom Complet</label>
+                        <input type="text" id="name" class="form-input" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="form-input" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-textarea"
+                            placeholder="Votre message ou détails de votre projet..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">ENVOYER</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Marrakech Treks</h4>
+                    <p>Votre partenaire pour des aventures authentiques au Maroc.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#treks">Nos Treks</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +212 662-302321</li>
+                        <li><i class="fas fa-envelope"></i> ait_talate@hotmail.fr</li>
+                        <li><i class="fab fa-whatsapp"></i> WhatsApp Available</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Marrakech Treks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to toggle mobile menu
+        document.querySelector('.nav-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+
+        // Simple script to change header background on scroll
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 100) {
+                document.querySelector('.header').classList.add('scrolled');
+            } else {
+                document.querySelector('.header').classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
